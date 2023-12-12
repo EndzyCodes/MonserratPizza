@@ -460,7 +460,7 @@ section {
 }
 
 .menu .box-container .box {
-   border: 1px solid limegreen;
+   /* border: 1px solid limegreen; */
    background-color: transparent;
    border-radius: 2rem;
    padding: 2rem;
