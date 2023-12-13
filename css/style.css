@@ -106,29 +106,35 @@ section {
    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
    z-index: 1000;
 }
-
+ /* UPDATE 1 start */
 .header .flex {
    display: flex;
    align-items: center;
    justify-content: space-between;
+
    position: relative;
+   right: 100px;
 }
 
-.navigation-menu {
+.navigation-menu { /* container nav */
    display: flex;
    list-style: none;
+   align-items: end;
 }
 
-.navigation-menu li {
+.navigation-menu li { /* space between each nav text */
    margin-right: 25px;
 }
 
-.navigation-menu li a {
+.navigation-menu li a { /* where we can move the whole nav */
    color: white;
    text-decoration: none;
    font-size: 16px !important;
    font-family: "Helvetica Neue", Arial, sans-serif;
    transition: color 0.3s ease;
+
+   position: relative; /* move nav to right */
+   left: 18rem;
 }
 
 .navigation-menu li a:hover {
@@ -140,21 +146,30 @@ section {
    font-family: "Poppins", sans-serif;
 }
 
-.header .flex .icons div {
+.header .flex .icons-container {
+   position: relative;
+   left: 150px;
+
+}
+
+.header .flex .icons-container div {
    font-size: 2.5rem;
    color: #666;
    cursor: pointer;
    margin-left: 1.7rem;
 }
 
-.header .flex .icons div:hover {
+.header .flex .icons-container div:hover {
    color: #e74c3c;
 }
 
-.header .flex .icons div span {
-   font-size: 2rem;
+.header .flex .icons-container div span {
+   font-size: 1.7rem;
+   position: absolute;
+   bottom: 12px;
+   left: 8.3em;
 }
-
+/* UPDATE 1 end */
 #menu-btn {
    display: none;
 }
@@ -381,9 +396,9 @@ element.style {
    padding: 0.5rem;
    text-transform: uppercase;
    margin-right: 5px;
-   /* Add margin-right for spacing - mark gilbert*/
+   /* Add margin-right para sa spacing*/
    padding: 1rem 1.5rem;
-   /* Adjust padding to increase container size - antok nako 4am na*/
+   /* Adjust padding to increase container size - antok nako 3am na*/
 }
 
 .menu-item-attributes li:last-child {
@@ -392,7 +407,7 @@ element.style {
 
 .menu-item-attributes li:hover {
    border-color: orange;
-   /* Apply a hover effect */
+   /* Apply hover effect para kool*/
 }
 
 .menu-item-attributes li.active {
@@ -408,86 +423,6 @@ li {
 
 .flex-container {
    display: flex;
-}
-
-/* ORDER */
-.order form {
-   background-color: #fff;
-   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-   padding: 2rem;
-   border-radius: .5rem;
-}
-
-.order form .display-orders {
-   display: flex;
-   align-items: flex-start;
-   justify-content: center;
-   margin-bottom: 2rem;
-   gap: 1.5rem;
-   flex-wrap: wrap;
-   padding: 3rem 2rem;
-   background-color: #f5f5f5;
-   border-radius: .5rem;
-}
-
-.order form .display-orders p {
-   font-size: 2rem;
-   color: #666;
-   background-color: #fff;
-   padding: 1rem 3rem;
-   border-radius: .5rem;
-   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-}
-
-.order form .display-orders p span {
-   color: #e74c3c;
-}
-
-.order form .flex {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 1.5rem;
-   justify-content: space-between;
-}
-
-.order form .flex .inputBox {
-   width: 49%;
-}
-
-.order form .flex .inputBox span {
-   font-size: 1.8rem;
-   color: #666;
-}
-
-.order form .flex .inputBox .box { /* text box*/
-   width: 100%;
-   background-color: #f5f5f5;
-   padding: 1.4rem;
-   font-size: 1.8rem;
-   color: #333;
-   border-radius: .5rem;
-   margin: 1rem 0;
-}
-
-.payment-method {
-   display: flex;
-   align-items: center;
-   margin-right: 40px;
-}
-
-.payment-method select {
-   margin-right: 10px;
-}
-
-.payment-method-icons {
-   display: flex;
-   align-items: center;
-}
-
-.payment-method-icons img {
-   margin-left: 35px;
-   margin-right: -15px;
-   height: 30px;
 }
 
 
