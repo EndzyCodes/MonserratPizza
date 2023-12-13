@@ -79,8 +79,8 @@ section {
    margin-right: 40vh;
 }
 
+/*button for add to cart in Our Menu*/
 .btn {
-   /*button for add to cart in Our Menu*/
    display: block;
    width: 100%;
    margin-top: 1rem;
@@ -181,110 +181,6 @@ section {
 }
 
 /* NAV MENU  - end -*/
-.user-account {
-   position: fixed;
-   top: 0;
-   right: -110%;
-   width: 100%;
-   z-index: 1100;
-   background-color: #fff;
-   height: 100vh;
-   overflow-y: scroll;
-}
-
-.user-account.active {
-   right: 0;
-}
-
-.user-account #close-account {
-   text-align: right;
-   margin-bottom: 2.5rem;
-}
-
-.user-account #close-account span {
-   cursor: pointer;
-   font-size: 2.5rem;
-   color: #e74c3c;
-   text-decoration: underline;
-}
-
-.user-account #close-account span:hover {
-   color: #333;
-}
-
-.user-account .user {
-   padding: 1.5rem;
-   text-align: center;
-   background-color: #f5f5f5;
-   border-radius: .5rem;
-}
-
-.user-account .user p {
-   font-size: 2rem;
-   color: #333;
-}
-
-.user-account .user p span {
-   color: #e74c3c;
-}
-
-.user-account .display-orders {
-   padding: 3rem 2rem;
-   text-align: center;
-   background-color: #f5f5f5;
-   border-radius: .5rem;
-   margin: 2rem 0;
-   display: flex;
-   align-items: flex-start;
-   justify-content: center;
-   gap: 1.5rem;
-   flex-wrap: wrap;
-}
-
-.user-account .display-orders p {
-   padding: 1rem 2.5rem;
-   font-size: 2rem;
-   color: #666;
-   background-color: #fff;
-   border-radius: .5rem;
-   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-}
-
-.user-account .display-orders p span {
-   color: #e74c3c;
-}
-
-.user-account .flex {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 2rem;
-   align-items: flex-start;
-}
-
-.user-account .flex form {
-   flex: 1 1 40rem;
-   border-radius: .5rem;
-   padding: 2rem;
-   background-color: #fff;
-}
-
-.user-account .flex form h3 {
-   font-size: 2.5rem;
-   margin-bottom: 1rem;
-   text-transform: uppercase;
-   text-align: center;
-   color: #333;
-}
-
-.user-account .flex form .box {
-   width: 100%;
-   margin: 1rem 0;
-   border-radius: .5rem;
-   background-color: white;
-   padding: 1.4rem;
-   font-size: 1.8rem;
-   color: #333;
-}
 
 .home-bg {
    background: url(../images/home-bg.jpg) no-repeat;
@@ -452,11 +348,13 @@ section {
 
 /* box containers for the pizza images */
 .menu .box-container {
+   margin: auto;
    display: grid;
    grid-template-columns: repeat(auto-fit, 35rem);
    gap: 1.5rem;
    align-items: flex-start;
    justify-content: center;
+   margin-top: 50px; /* pababain ng kaunti ang menu */
 }
 
 .menu .box-container .box {
