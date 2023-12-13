@@ -151,138 +151,59 @@ body {
     background-image: url(../images/bg-image.jpg);
 }
 
-/* box containers for the pizza images */
-.menu .box-container {
-    margin: auto;
+/* About section - Starts - */
+.about h1 {
+    /* About Us*/
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.btn {
+    /* Our menu buttons, made with love, 30 min delivery share w/ friends*/
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.about .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, 35rem);
-    gap: 1.5rem;
+    gap: 3rem;
     align-items: flex-start;
     justify-content: center;
 }
 
-.menu .box-container .box {
-    /* border: 1px solid limegreen; */
-    background-color: transparent;
-    border-radius: 2rem;
+.about .box-container .box {
+    background-color: #fff;
+    border-radius: .5rem;
     padding: 2rem;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 
     position: relative;
-    top: 40px; /* Move each box down by 20px */
+    top: 100px; /* Move each box down by 20px */
 }
 
-.menu .box-container .box:hover {
-    transform: scale(1.02);
-}
-
-.menu .box-container .box img {
+.about .box-container .box img {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 2rem;
 }
 
-/* the box for the price */
-.menu .box-container .box .price {
-    /* color of the box*/
-    background-color: #121618;
-    border-radius: .5rem;
-    padding: .5rem 1rem;
-    font-size: 1.7rem;
-    color: #fff;
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-}
-
-.menu .box-container .box .price span {
+.about .box-container .box h3 {
     font-size: 2.5rem;
-}
-
-.menu .box-container .box .name {
-    /*title for pizza, pizza 1 pizza 2 pizza 3...*/
-    font-size: 24px;
-    font-family: "Poppins", sans-serif;
-    color: #fff;
-    margin: .5rem 0;
-    font-weight: 400;
-    letter-spacing: 1px;
-    text-align: start;
-}
-
-div.Description {
-    font-size: 16px;
-    font-family: "Times New Roman", Times, serif;
-    text-align: start;
-    color: #ffffff;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.menu .box-container .box form {
-    display: flex;
-    gap: 1rem;
-}
-
-.menu .box-container .box form .qty {
-    width: 8rem;
-    border: .1rem solid #666;
-    padding: 1rem;
-    margin-top: 1rem;
-    border-radius: .5rem;
-    font-size: 1.8rem;
     color: #333;
 }
 
-/* MENU ITEM ATTRIBUTES */
-element.style {
-    transition: all 0s ease 0s, all 0s ease-in-out 0s, all 0.3s ease 0s;
-    color: white;
-    border-color: rgb(250, 197, 100);
+.about .box-container .box p {
+    padding: 1rem 0;
+    line-height: 2;
+    font-size: 1.6rem;
+    color: #666;
 }
 
-.menu-item-attributes {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: fit-content;
-}
-
-.menu-item-attributes li {
-    border: 1px solid rgba(255, 255, 255, 0.113);
-    cursor: pointer;
-    text-transform: uppercase;
-    font-size: 0.83rem;
-    font-family: "Poppins", sans-serif;
-    padding: 0.5rem;
-    text-transform: uppercase;
-    margin-right: 5px;
-    /* Add margin-right for spacing - mark gilbert*/
-    padding: 1rem 1.5rem;
-    /* Adjust padding to increase container size - antok nako 4am na*/
-}
-
-.menu-item-attributes li:last-child {
-    margin-right: 0;
-}
-
-.menu-item-attributes li:hover {
-    border-color: orange;
-    /* Apply a hover effect */
-}
-
-.menu-item-attributes li.active {
-    border-color: orange;
-}
-
-li {
-    font-size: 12.2px;
-    list-style: none;
-    font-family: 'Times New Roman', Times, serif;
-    color: #ffffff;
-}
-
-/*button for add to cart in Our Menu*/
+/*button for About - "Our Menu" */
 .btn {
     display: block;
     width: 100%;
@@ -302,3 +223,5 @@ li {
     /* add to cart button color when you hover it*/
     background-color: rgb(19, 73, 5);
 }
+
+/* About section - end - */

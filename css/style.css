@@ -79,27 +79,6 @@ section {
    margin-right: 40vh;
 }
 
-/*button for add to cart in Our Menu*/
-.btn {
-   display: block;
-   width: 100%;
-   margin-top: 1rem;
-   border-radius: .5rem;
-   padding: 1rem 3rem;
-   font-size: 2rem;
-   color: #fff;
-   /*background-color: rgb(201, 98, 30);*/
-   background-color: #067737;
-   cursor: pointer;
-   text-transform: capitalize;
-   text-align: center;
-}
-
-.btn:hover {
-   /* add to cart button color when you hover it*/
-   background-color: rgb(19, 73, 5);
-}
-
 .header .flex .logo {
    /* LOGO */
    font-size: 2.5rem;
@@ -179,8 +158,8 @@ section {
 #menu-btn {
    display: none;
 }
-
 /* NAV MENU  - end -*/
+
 
 .home-bg {
    background: url(../images/home-bg.jpg) no-repeat;
@@ -295,55 +274,6 @@ section {
 .home-bg .home .slide-container .slide .content .fa-angle-right:hover {
    background-color: #e74c3c;
    color: #fff;
-}
-
-.about h1 {
-   /* About Us*/
-   font-family: "Poppins", sans-serif;
-   color: white;
-   font-size: 40px;
-   font-weight: 400;
-}
-
-.btn {
-   /* Our menu buttons, made with love, 30 min delivery share w/ friends*/
-   font-family: "Poppins", sans-serif;
-   font-size: 20px;
-   color: white;
-}
-
-
-.about .box-container {
-   display: grid;
-   grid-template-columns: repeat(auto-fit, 35rem);
-   gap: 1.5rem;
-   align-items: flex-start;
-   justify-content: center;
-}
-
-.about .box-container .box {
-   background-color: #fff;
-   border-radius: .5rem;
-   padding: 2rem;
-   text-align: center;
-   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-}
-
-.about .box-container .box img {
-   width: 100%;
-   margin-bottom: 2rem;
-}
-
-.about .box-container .box h3 {
-   font-size: 2.5rem;
-   color: #333;
-}
-
-.about .box-container .box p {
-   padding: 1rem 0;
-   line-height: 2;
-   font-size: 1.6rem;
-   color: #666;
 }
 
 /* box containers for the pizza images */
