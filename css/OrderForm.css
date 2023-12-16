@@ -64,6 +64,22 @@ section {
     margin-right: 40vh;
 }
 
+.header .flex .logo {
+    /* LOGO */
+    font-size: 2.5rem;
+    color: white;
+}
+
+.logo {
+    transition: transform 0.3s ease;
+    width: 60px;
+    height: 60px;
+}
+
+.logo:hover {
+    transform: rotate(30deg);
+}
+
 /* NAV MENU */
 .header {
     /*nav bar*/
@@ -80,24 +96,34 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     position: relative;
+    right: 100px;
 }
 
 .navigation-menu {
+    /* container nav */
     display: flex;
     list-style: none;
+    align-items: end;
 }
 
 .navigation-menu li {
+    /* space between each nav text */
     margin-right: 25px;
 }
 
 .navigation-menu li a {
+    /* where we can move the whole nav */
     color: white;
     text-decoration: none;
     font-size: 16px !important;
     font-family: "Helvetica Neue", Arial, sans-serif;
     transition: color 0.3s ease;
+
+    position: relative;
+    /* move nav to right */
+    left: 18rem;
 }
 
 .navigation-menu li a:hover {
@@ -109,46 +135,32 @@ section {
     font-family: "Poppins", sans-serif;
 }
 
-.header .flex .icons div {
+.header .flex .icons-container {
+    position: relative;
+    left: 150px;
+
+}
+
+.header .flex .icons-container div {
     font-size: 2.5rem;
     color: #666;
     cursor: pointer;
     margin-left: 1.7rem;
 }
 
-.header .flex .icons div:hover {
+.header .flex .icons-container div:hover {
     color: #e74c3c;
 }
 
-.header .flex .icons div span {
-    font-size: 2rem;
+.header .flex .icons-container div span {
+    font-size: 1.7rem;
+    position: absolute;
+    bottom: 12px;
+    left: 8.3em;
 }
 
 #menu-btn {
     display: none;
-}
-
-* {
-    font-family: 'Nunito', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    transition: .2s linear;
-    font-size: 30px
-}
-
-html {
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    scroll-padding-top: 7.5rem;
-}
-
-body {
-    background-image: url(../images/bg-image.jpg);
 }
 
 /* ORDER */
