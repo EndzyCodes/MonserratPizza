@@ -47,12 +47,12 @@ section {
    max-width: 1200px;
 }
 
-.heading {
+.heading { /* "FAQ" and "OUR CUSTOMER" */
    text-align: center;
    font-family: "Poppins", sans-serif;
    font-weight: 400;
    margin-bottom: 2rem;
-   font-size: 40px;
+   font-size: 29px;
    color: white;
    text-transform: uppercase;
 }
@@ -428,7 +428,7 @@ li {
 
 
 /* FAQ*/
-.faq .accordion-container {
+/* .faq .accordion-container {
    max-width: 70rem;
    margin: 0 auto;
 }
@@ -469,19 +469,56 @@ li {
 
 .faq .accordion-container .accordion.active .accordion-heading i {
    transform: rotate(180deg);
+} */
+
+/* second section */
+.second_section {
+   height: 28em;
 }
+
+.sec_section_container {
+   width: 70%;
+   position: relative; 
+}
+
+.sec_section_container img {
+   border-radius: 10px;
+   width: 30em;
+
+   position: absolute;
+   left: 80%;
+   top: 2em;
+}
+
+.sec_section_container .sec_heading{
+   font-family: "Poppins", sans-serif ;
+   color: white;
+   font-size: 45px;
+   font-weight: 600;
+   width: 15em;
+   
+   position: absolute;
+   left: -7em;
+   top: 19rem;
+}
+
+.sec_section_container p {
+   color: white;
+   font-size: 24px;
+   font-weight: 350;
+   width: 35em;
+
+   position: absolute;
+   right: 285px;
+   top: 42rem;
+}
+
 
 /* CUSTOMER REVIEWS */
 
 .heading span {
    color: #209653;
    font-weight: 600;
-}
-
-.heading {
-   color: white;
-   font-size: 29px;
-   font-weight: 500;
 }
 
 .review .box {
