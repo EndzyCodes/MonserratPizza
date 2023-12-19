@@ -425,12 +425,12 @@ li {
    width: 30em;
 
    position: absolute;
-   left: 80%;
+   left: 70%;
    top: 2em;
 }
 
 .sec_section_container .sec_heading{
-   font-family: "Poppins", sans-serif ;
+   font-family: "Poppins", sans-serif;
    color: white;
    font-size: 45px;
    font-weight: 600;
@@ -454,7 +454,6 @@ li {
 
 /* FAQ SECTION */
 .faq_section {
-   max-width: 800px;
    display: flex;
    max-width: 55em;
 }
