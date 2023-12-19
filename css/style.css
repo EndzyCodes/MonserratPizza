@@ -106,7 +106,7 @@ section {
    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
    z-index: 1000;
 }
- /* UPDATE 1 start */
+
 .header .flex {
    display: flex;
    align-items: center;
@@ -169,7 +169,7 @@ section {
    bottom: 12px;
    left: 8.3em;
 }
-/* UPDATE 1 end */
+
 #menu-btn {
    display: none;
 }
@@ -425,52 +425,6 @@ li {
    display: flex;
 }
 
-
-
-/* FAQ*/
-/* .faq .accordion-container {
-   max-width: 70rem;
-   margin: 0 auto;
-}
-
-.faq .accordion-container .accordion {
-   margin: 1.5rem 0;
-   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-}
-
-.faq .accordion-container .accordion .accordion-heading {
-   padding: 1.5rem;
-   background: #333;
-   color: #fff;
-   cursor: pointer;
-   font-size: 2rem;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   gap: 1.5rem;
-}
-
-.faq .accordion-container .accordion .accrodion-content {
-   padding: 2rem;
-   background-color: #fff;
-   line-height: 2;
-   color: #666;
-   font-size: 1.6rem;
-   display: none;
-}
-
-.faq .accordion-container .accordion.active .accrodion-content {
-   display: inline-block;
-}
-
-.faq .accordion-container .accordion.active .accordion-heading {
-   background-color: #1d9f55;
-}
-
-.faq .accordion-container .accordion.active .accordion-heading i {
-   transform: rotate(180deg);
-} */
-
 /* second section */
 .second_section {
    height: 28em;
@@ -516,7 +470,6 @@ li {
 /* FAQ SECTION */
 .faq_section {
    max-width: 800px;
-   /* border: 1px solid limegreen; */
    display: flex;
    max-width: 55em;
 }
@@ -587,10 +540,7 @@ li {
    margin-bottom: 20px;
 }
 
-
-
 /* CUSTOMER REVIEWS */
-
 .heading_review {
    text-align: center;
    font-family: "Poppins", sans-serif;
@@ -610,7 +560,6 @@ li {
 
 .review .box {
    margin-right: 30px;
-   /* Adds space at the bottom of each review box */
 }
 
 
@@ -662,7 +611,6 @@ li {
 
 .footer {
    margin-top: 100px;
-   /* Adds space at the top of the "footer" section */
 }
 
 
