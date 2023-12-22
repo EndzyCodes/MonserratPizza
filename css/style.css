@@ -1,22 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;800&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Nothing+You+Could+Do&display=swap");
-
-/* :root {
-   --poppins-font: "Poppins", sans-serif;
-   --josefin-font: "Sansita Swashed", cursive;
-   --nothing-font: "Nothing You Could Do", cursive;
-
-   --red:#e74c3c;
-   --black:#333;
-   --white:#fff;
-   --light-bg:#f5f5f5;
-   --light-color:#666;
-   --border:.1rem solid #666;
-   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
-   --light-black: #121618;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
    font-family: 'Nunito', sans-serif;
@@ -47,12 +32,12 @@ section {
    max-width: 1200px;
 }
 
-.heading {
+.heading { /* "FAQ" and "OUR CUSTOMER" */
    text-align: center;
    font-family: "Poppins", sans-serif;
    font-weight: 400;
    margin-bottom: 2rem;
-   font-size: 40px;
+   font-size: 29px;
    color: white;
    text-transform: uppercase;
 }
@@ -77,27 +62,6 @@ section {
    display: block;
    cursor: pointer;
    margin-right: 40vh;
-}
-
-.btn {
-   /*button for add to cart in Our Menu*/
-   display: block;
-   width: 100%;
-   margin-top: 1rem;
-   border-radius: .5rem;
-   padding: 1rem 3rem;
-   font-size: 2rem;
-   color: #fff;
-   /*background-color: rgb(201, 98, 30);*/
-   background-color: #067737;
-   cursor: pointer;
-   text-transform: capitalize;
-   text-align: center;
-}
-
-.btn:hover {
-   /* add to cart button color when you hover it*/
-   background-color: rgb(19, 73, 5);
 }
 
 .header .flex .logo {
@@ -132,24 +96,30 @@ section {
    display: flex;
    align-items: center;
    justify-content: space-between;
+
    position: relative;
+   right: 100px;
 }
 
-.navigation-menu {
+.navigation-menu { /* container nav */
    display: flex;
    list-style: none;
+   align-items: end;
 }
 
-.navigation-menu li {
+.navigation-menu li { /* space between each nav text */
    margin-right: 25px;
 }
 
-.navigation-menu li a {
+.navigation-menu li a { /* where we can move the whole nav */
    color: white;
    text-decoration: none;
    font-size: 16px !important;
    font-family: "Helvetica Neue", Arial, sans-serif;
    transition: color 0.3s ease;
+
+   position: relative; /* move nav to right */
+   left: 18rem;
 }
 
 .navigation-menu li a:hover {
@@ -161,130 +131,35 @@ section {
    font-family: "Poppins", sans-serif;
 }
 
-.header .flex .icons div {
+.header .flex .icons-container {
+   position: relative;
+   left: 150px;
+
+}
+
+.header .flex .icons-container div {
    font-size: 2.5rem;
    color: #666;
    cursor: pointer;
    margin-left: 1.7rem;
 }
 
-.header .flex .icons div:hover {
+.header .flex .icons-container div:hover {
    color: #e74c3c;
 }
 
-.header .flex .icons div span {
-   font-size: 2rem;
+.header .flex .icons-container div span {
+   font-size: 1.7rem;
+   position: absolute;
+   bottom: 12px;
+   left: 8.3em;
 }
 
 #menu-btn {
    display: none;
 }
-
 /* NAV MENU  - end -*/
-.user-account {
-   position: fixed;
-   top: 0;
-   right: -110%;
-   width: 100%;
-   z-index: 1100;
-   background-color: #fff;
-   height: 100vh;
-   overflow-y: scroll;
-}
 
-.user-account.active {
-   right: 0;
-}
-
-.user-account #close-account {
-   text-align: right;
-   margin-bottom: 2.5rem;
-}
-
-.user-account #close-account span {
-   cursor: pointer;
-   font-size: 2.5rem;
-   color: #e74c3c;
-   text-decoration: underline;
-}
-
-.user-account #close-account span:hover {
-   color: #333;
-}
-
-.user-account .user {
-   padding: 1.5rem;
-   text-align: center;
-   background-color: #f5f5f5;
-   border-radius: .5rem;
-}
-
-.user-account .user p {
-   font-size: 2rem;
-   color: #333;
-}
-
-.user-account .user p span {
-   color: #e74c3c;
-}
-
-.user-account .display-orders {
-   padding: 3rem 2rem;
-   text-align: center;
-   background-color: #f5f5f5;
-   border-radius: .5rem;
-   margin: 2rem 0;
-   display: flex;
-   align-items: flex-start;
-   justify-content: center;
-   gap: 1.5rem;
-   flex-wrap: wrap;
-}
-
-.user-account .display-orders p {
-   padding: 1rem 2.5rem;
-   font-size: 2rem;
-   color: #666;
-   background-color: #fff;
-   border-radius: .5rem;
-   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-}
-
-.user-account .display-orders p span {
-   color: #e74c3c;
-}
-
-.user-account .flex {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 2rem;
-   align-items: flex-start;
-}
-
-.user-account .flex form {
-   flex: 1 1 40rem;
-   border-radius: .5rem;
-   padding: 2rem;
-   background-color: #fff;
-}
-
-.user-account .flex form h3 {
-   font-size: 2.5rem;
-   margin-bottom: 1rem;
-   text-transform: uppercase;
-   text-align: center;
-   color: #333;
-}
-
-.user-account .flex form .box {
-   width: 100%;
-   margin: 1rem 0;
-   border-radius: .5rem;
-   background-color: white;
-   padding: 1.4rem;
-   font-size: 1.8rem;
-   color: #333;
-}
 
 .home-bg {
    background: url(../images/home-bg.jpg) no-repeat;
@@ -340,8 +215,8 @@ section {
 }
 
 .welcome-text {
-   font-size: 45px;
-   font-family: v"Nothing You Could Do", cursive;
+   font-size: 7rem;
+   font-family: "Nothing You Could Do", cursive;
    font-weight: 900;
    color: rgb(255, 38, 38);
 }
@@ -401,62 +276,15 @@ section {
    color: #fff;
 }
 
-.about h1 {
-   /* About Us*/
-   font-family: "Poppins", sans-serif;
-   color: white;
-   font-size: 40px;
-   font-weight: 400;
-}
-
-.btn {
-   /* Our menu buttons, made with love, 30 min delivery share w/ friends*/
-   font-family: "Poppins", sans-serif;
-   font-size: 20px;
-   color: white;
-}
-
-
-.about .box-container {
-   display: grid;
-   grid-template-columns: repeat(auto-fit, 35rem);
-   gap: 1.5rem;
-   align-items: flex-start;
-   justify-content: center;
-}
-
-.about .box-container .box {
-   background-color: #fff;
-   border-radius: .5rem;
-   padding: 2rem;
-   text-align: center;
-   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-}
-
-.about .box-container .box img {
-   width: 100%;
-   margin-bottom: 2rem;
-}
-
-.about .box-container .box h3 {
-   font-size: 2.5rem;
-   color: #333;
-}
-
-.about .box-container .box p {
-   padding: 1rem 0;
-   line-height: 2;
-   font-size: 1.6rem;
-   color: #666;
-}
-
 /* box containers for the pizza images */
 .menu .box-container {
+   margin: auto;
    display: grid;
    grid-template-columns: repeat(auto-fit, 35rem);
    gap: 1.5rem;
    align-items: flex-start;
    justify-content: center;
+   margin-top: 50px; /* pababain ng kaunti ang menu */
 }
 
 .menu .box-container .box {
@@ -553,9 +381,9 @@ element.style {
    padding: 0.5rem;
    text-transform: uppercase;
    margin-right: 5px;
-   /* Add margin-right for spacing - mark gilbert*/
+   /* Add margin-right para sa spacing*/
    padding: 1rem 1.5rem;
-   /* Adjust padding to increase container size - antok nako 4am na*/
+   /* Adjust padding to increase container size - antok nako 3am na*/
 }
 
 .menu-item-attributes li:last-child {
@@ -564,7 +392,7 @@ element.style {
 
 .menu-item-attributes li:hover {
    border-color: orange;
-   /* Apply a hover effect */
+   /* Apply hover effect para kool*/
 }
 
 .menu-item-attributes li.active {
@@ -582,148 +410,140 @@ li {
    display: flex;
 }
 
-/* ORDER */
-.order form {
-   background-color: #fff;
-   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-   padding: 2rem;
-   border-radius: .5rem;
+/* second section */
+.second_section {
+   height: 28em;
 }
 
-.order form .display-orders {
+.sec_section_container {
+   width: 70%;
+   position: relative; 
+}
+
+.sec_section_container img {
+   border-radius: 10px;
+   width: 30em;
+
+   position: absolute;
+   left: 70%;
+   top: 2em;
+}
+
+.sec_section_container .sec_heading{
+   font-family: "Poppins", sans-serif;
+   color: white;
+   font-size: 45px;
+   font-weight: 600;
+   width: 15em;
+   
+   position: absolute;
+   left: -7em;
+   top: 19rem;
+}
+
+.sec_section_container p {
+   color: white;
+   font-size: 24px;
+   font-weight: 350;
+   width: 35em;
+
+   position: absolute;
+   right: 285px;
+   top: 42rem;
+}
+
+/* FAQ SECTION */
+.faq_section {
    display: flex;
-   align-items: flex-start;
-   justify-content: center;
-   margin-bottom: 2rem;
-   gap: 1.5rem;
-   flex-wrap: wrap;
-   padding: 3rem 2rem;
-   background-color: #f5f5f5;
-   border-radius: .5rem;
+   max-width: 55em;
 }
 
-.order form .display-orders p {
-   font-size: 2rem;
-   color: #666;
-   background-color: #fff;
-   padding: 1rem 3rem;
-   border-radius: .5rem;
-   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+.faq_Heading_container {
+   padding-bottom: 20px;
+   margin-top: 3rem;
+   margin-left: 8rem;
 }
 
-.order form .display-orders p span {
-   color: #e74c3c;
+.faq_heading {
+   max-width: 100%;
+   color: white;
 }
 
-.order form .flex {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 1.5rem;
-   justify-content: space-between;
+.faq_heading h1 {
+   font-family: "Poppins", sans-serif;
+   font-weight: 700;
+   font-size: 45px;
 }
 
-.order form .flex .inputBox {
-   width: 49%;
+.faq_heading p {
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   font-size: 20px;
 }
 
-.order form .flex .inputBox span {
-   font-size: 1.8rem;
-   color: #666;
+.faq_qa-container {
+   margin-top: 20px;
+   margin-left: 20rem;
+   max-width: 37em;
 }
 
-.order form .flex .inputBox .box { /* text box*/
-   width: 100%;
-   background-color: #f5f5f5;
-   padding: 1.4rem;
-   font-size: 1.8rem;
-   color: #333;
-   border-radius: .5rem;
-   margin: 1rem 0;
+.qa_one {
+   margin-bottom: 20px;
+   color: white;
+   border-bottom: 1px solid white;
+   border-top: 1px solid white;
 }
 
-.payment-method {
-   display: flex;
-   align-items: center;
-   margin-right: 40px;
+.qa {
+   margin-bottom: 20px;
+   color: white;
+   border-bottom: 1px solid white;
 }
 
-.payment-method select {
-   margin-right: 10px;
+.qa_one h3 {
+   font-size: 18px;
+   margin-top: 30px;
+   margin-bottom: 20px;
 }
 
-.payment-method-icons {
-   display: flex;
-   align-items: center;
+.qa_one p {
+   font-size: 16px;
+   line-height: 1.5;
+   margin-bottom: 20px;
 }
 
-.payment-method-icons img {
-   margin-left: 35px;
-   margin-right: -15px;
-   height: 30px;
+.qa h3 {
+   font-size: 18px;
+   margin-top: 30px;
+   margin-bottom: 20px;
 }
 
-
-
-/* FAQ*/
-.faq .accordion-container {
-   max-width: 70rem;
-   margin: 0 auto;
-}
-
-.faq .accordion-container .accordion {
-   margin: 1.5rem 0;
-   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-}
-
-.faq .accordion-container .accordion .accordion-heading {
-   padding: 1.5rem;
-   background: #333;
-   color: #fff;
-   cursor: pointer;
-   font-size: 2rem;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   gap: 1.5rem;
-}
-
-.faq .accordion-container .accordion .accrodion-content {
-   padding: 2rem;
-   background-color: #fff;
-   line-height: 2;
-   color: #666;
-   font-size: 1.6rem;
-   display: none;
-}
-
-.faq .accordion-container .accordion.active .accrodion-content {
-   display: inline-block;
-}
-
-.faq .accordion-container .accordion.active .accordion-heading {
-   background-color: #1d9f55;
-}
-
-.faq .accordion-container .accordion.active .accordion-heading i {
-   transform: rotate(180deg);
+.qa p {
+   font-size: 16px;
+   line-height: 1.5;
+   margin-bottom: 20px;
 }
 
 /* CUSTOMER REVIEWS */
-
-.heading span {
-   color: #209653;
-   font-weight: 600;
+.heading_review {
+   text-align: center;
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   margin-bottom: 2em;
+   font-size: 35px;
+   color: white;
+   text-transform: uppercase;
 }
 
-.heading {
-   color: white;
-   font-size: 29px;
-   font-weight: 500;
+
+.heading_review span {
+   color: #209653;
+   font-weight: 600;
+   font-size: 35px
 }
 
 .review .box {
-   margin-right: 20px;
-   /* Adds space at the bottom of each review box */
+   margin-right: 30px;
 }
 
 
@@ -731,6 +551,7 @@ li {
    display: flex;
    flex-wrap: wrap;
    gap: 1.5rem;
+   margin-bottom: 4em;
 }
 
 .review .box-container .box {
@@ -767,14 +588,13 @@ li {
 }
 
 .review .box-container .box p {
-   font-size: 1.5rem;
+   font-size: 1.7rem;
    color: #eee;
    padding: 1rem 0;
 }
 
 .footer {
    margin-top: 100px;
-   /* Adds space at the top of the "footer" section */
 }
 
 
